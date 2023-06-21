@@ -18,16 +18,16 @@ const Cliente = sequelize.define('Cliente', {
     type: DataTypes.STRING,
     allowNull: false,
   },
-  dirección: {
+  direccion: {
     type: DataTypes.STRING,
     allowNull: false,
   },
-  correo_electrónico: {
+  correo_electronico: {
     type: DataTypes.STRING,
     allowNull: false,
     unique: true,
   },
-  teléfono: {
+  telefono: {
     type: DataTypes.STRING,
     allowNull: false,
   },
@@ -40,7 +40,7 @@ const Reserva = sequelize.define('Reserva', {
     primaryKey: true,
     autoIncrement: true,
   },
-  código_reserva: {
+  codigo_reserva: {
     type: DataTypes.STRING,
     allowNull: false,
     unique: true,
